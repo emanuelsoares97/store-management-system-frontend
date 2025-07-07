@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Categoria - Store Management</title>
+  <link rel="stylesheet" href="/src/assets/css/dashboard.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <main>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+      <button onclick="window.location.href='index.html'" style="padding:0.5rem 1.2rem;background:#ffb347;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Voltar ao Dashboard</button>
+      <button id="logout-btn" style="padding:0.5rem 1.2rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Logout</button>
+    </div>
+    <h1>Categoria</h1>
+    <section id="categoria-criar">
+      <h2>Criar Categoria</h2>
+      <form id="form-categoria">
+        <label>Nome: <input name="nome" required /></label>
+        <button type="submit">Criar</button>
+      </form>
+      <div id="categoria-criar-msg"></div>
+    </section>
+    <section id="categoria-listar">
+      <h2>Lista de Categorias</h2>
+      <div id="categoria-lista"></div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script type="module" src="/src/pages/categoria.js"></script>
+  <script type="module" src="/src/pages/logout.js"></script>
+</body>
+</html> 

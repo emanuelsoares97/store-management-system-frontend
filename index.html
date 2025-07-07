@@ -7,53 +7,36 @@
 </head>
 <body>
   <div id="navbar"></div>
-
   <main id="app">
+    <div style="display:flex;justify-content:flex-end;margin-bottom:1rem;">
+      <button id="logout-btn" style="padding:0.5rem 1.2rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Logout</button>
+    </div>
     <h1>Dashboard</h1>
-    <p id="welcome-message">Bem-vindo ao sistema de gestão!</p>
     <div class="dashboard-cards">
       <div class="dashboard-card">
         <h2>Produtos</h2>
-        <div class="crud-actions">
-          <button>Criar</button>
-          <button>Listar</button>
-          <button>Editar</button>
-          <button>Remover</button>
-        </div>
+        <p>Gerencie o estoque e cadastre novos produtos.</p>
+        <button onclick="window.location.href='produtos.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Acessar Produtos</button>
+      </div>
+      <div class="dashboard-card">
+        <h2>Categorias</h2>
+        <p>Gerencie as categorias de produtos.</p>
+        <button onclick="window.location.href='categoria.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Acessar Categorias</button>
       </div>
       <div class="dashboard-card">
         <h2>Vendas</h2>
-        <div class="crud-actions">
-          <button>Criar</button>
-          <button>Listar</button>
-          <button>Editar</button>
-          <button>Remover</button>
-        </div>
+        <p>Registre e acompanhe as vendas realizadas.</p>
+        <button onclick="window.location.href='vendas.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Acessar Vendas</button>
       </div>
       <div class="dashboard-card">
         <h2>Utilizadores</h2>
-        <div class="crud-actions">
-          <button>Criar</button>
-          <button>Listar</button>
-          <button>Editar</button>
-          <button>Remover</button>
-        </div>
-      </div>
-      <div class="dashboard-card">
-        <h2>Categoria</h2>
-        <div class="crud-actions">
-          <button>Criar</button>
-          <button>Listar</button>
-          <button>Editar</button>
-          <button>Remover</button>
-        </div>
+        <p>Gerencie os utilizadores do sistema.</p>
+        <button onclick="window.location.href='users.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Acessar Utilizadores</button>
       </div>
     </div>
-    <button id="logout-btn">Logout</button>
   </main>
-
   <div id="footer"></div>
-
   <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/pages/logout.js"></script>
 </body>
 </html>

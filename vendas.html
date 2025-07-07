@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vendas - Store Management</title>
+  <link rel="stylesheet" href="/src/assets/css/dashboard.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <main>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+      <button onclick="window.location.href='index.html'" style="padding:0.5rem 1.2rem;background:#ffb347;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Voltar ao Dashboard</button>
+      <button id="logout-btn" style="padding:0.5rem 1.2rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Logout</button>
+    </div>
+    <h1>Vendas</h1>
+    <section id="venda-criar">
+      <h2>Registrar Venda</h2>
+      <form id="form-venda">
+        <label>Cliente (opcional): <input name="customer" /></label><br>
+        <div class="user-select-div"></div>
+        <div class="produto-select-div"></div>
+        <label>Quantidade: <input name="quantity" type="number" min="1" required /></label><br>
+        <button type="submit">Registrar</button>
+      </form>
+      <div id="venda-criar-msg"></div>
+    </section>
+    <section id="venda-listar">
+      <h2>Lista de Vendas</h2>
+      <div id="venda-lista"></div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script type="module" src="/src/pages/vendas.js"></script>
+  <script type="module" src="/src/pages/logout.js"></script>
+</body>
+</html> 
