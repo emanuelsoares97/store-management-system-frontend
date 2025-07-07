@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Store Management - Dashboard</title>
+  <script type="module" crossorigin src="/store-management-system-frontend/assets/index-C7Us5yle.js"></script>
+  <link rel="stylesheet" crossorigin href="/store-management-system-frontend/assets/index-DbKVC8I1.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main id="app">
+    <div style="display:flex;justify-content:flex-end;margin-bottom:1rem;">
+      <button id="logout-btn" style="padding:0.5rem 1.2rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Logout</button>
+    </div>
+    <h1>Dashboard</h1>
+    <div class="dashboard-cards">
+      <div class="dashboard-card">
+        <h2>Produtos</h2>
+        <p>Gerencie o estoque e cadastre novos produtos.</p>
+        <button onclick="window.location.href='produtos.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Aceder Produtos</button>
+      </div>
+      <div class="dashboard-card">
+        <h2>Categorias</h2>
+        <p>Gerencie as categorias de produtos.</p>
+        <button onclick="window.location.href='categoria.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Aceder Categorias</button>
+      </div>
+      <div class="dashboard-card">
+        <h2>Vendas</h2>
+        <p>Registre e acompanhe as vendas realizadas.</p>
+        <button onclick="window.location.href='vendas.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Aceder Vendas</button>
+      </div>
+      <div class="dashboard-card">
+        <h2>Utilizadores</h2>
+        <p>Gerencie os utilizadores do sistema.</p>
+        <button onclick="window.location.href='users.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Aceder Utilizadores</button>
+      </div>
+    </div>
+  </main>
+  <div id="footer"></div>
+</body>
+</html>
