@@ -1,12 +1,12 @@
 # Store Management System Frontend
 
-Este é o frontend de um sistema de gestão de loja, desenvolvido em JavaScript puro (Vanilla JS) e HTML/CSS, com integração a uma API backend para gerenciamento de vendas, produtos, categorias, usuários e clientes.
+Este é o frontend de um sistema de gestão de loja, desenvolvido em JavaScript puro (Vanilla JS) e HTML/CSS, com integração a uma API backend para gerenciamento de vendas, produtos, categorias, utilizadores e clientes.
 
 ## Funcionalidades
-- Login de usuários
+- Login de utilizadores
 - Cadastro e listagem de produtos
 - Cadastro e listagem de categorias
-- Cadastro e listagem de usuários
+- Cadastro e listagem de utilizadores
 - Registro e listagem de vendas
 - Controle de estoque
 
@@ -15,7 +15,7 @@ Este é o frontend de um sistema de gestão de loja, desenvolvido em JavaScript 
 store-management-system-frontend/
 ├── index.html                # Página inicial/login
 ├── vendas.html               # Página de vendas
-├── users.html                # Página de usuários
+├── users.html                # Página de utilizadores
 ├── categoria.html            # Página de categorias
 ├── produtos.html             # Página de produtos
 ├── src/
@@ -39,7 +39,7 @@ store-management-system-frontend/
 ## Instalação
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/store-management-system-frontend.git
+   git clone https://github.com/emanuelsoares97/store-management-system-frontend.git
    ```
 2. Acesse a pasta do projeto:
    ```bash
