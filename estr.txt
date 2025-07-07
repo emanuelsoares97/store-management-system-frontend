@@ -1,0 +1,19 @@
+store-frontend/
+├── index.html               # HTML principal na raiz (requisito do Vite)
+├── vite.config.js           # Configuração do Vite
+├── package.json             # Configurações e scripts npm
+├── public/                  # Arquivos estáticos (favicon, imagens, etc) — copiados direto no build
+│   └── favicon.ico
+├── src/                     # Código fonte do frontend
+│   ├── assets/              # Imagens, fontes, css, etc
+│   │   └── css/
+│   │       └── style.css
+│   ├── components/          # Componentes JS reutilizáveis (navbar, footer, etc)
+│   │   ├── navbar.js
+│   │   └── footer.js
+│   ├── pages/               # Scripts JS específicos para páginas
+│   │   ├── home.js
+│   │   ├── products.js
+│   │   └── sales.js
+│   ├── router.js            # Se quiser fazer um roteamento simples
+│   └── main.js              # Arquivo principal que inicializa a aplicação

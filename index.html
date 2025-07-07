@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Store Management - Dashboard</title>
+  <link rel="stylesheet" href="/src/assets/css/dashboard.css" />
 </head>
 <body>
-    
+  <div id="navbar"></div>
+
+  <main id="app">
+    <h1>Dashboard</h1>
+    <p id="welcome-message">Bem-vindo ao sistema de gestão!</p>
+    <div class="dashboard-cards">
+      <div class="dashboard-card">
+        <h2>Produtos</h2>
+        <div class="crud-actions">
+          <button>Criar</button>
+          <button>Listar</button>
+          <button>Editar</button>
+          <button>Remover</button>
+        </div>
+      </div>
+      <div class="dashboard-card">
+        <h2>Vendas</h2>
+        <div class="crud-actions">
+          <button>Criar</button>
+          <button>Listar</button>
+          <button>Editar</button>
+          <button>Remover</button>
+        </div>
+      </div>
+      <div class="dashboard-card">
+        <h2>Utilizadores</h2>
+        <div class="crud-actions">
+          <button>Criar</button>
+          <button>Listar</button>
+          <button>Editar</button>
+          <button>Remover</button>
+        </div>
+      </div>
+      <div class="dashboard-card">
+        <h2>Categoria</h2>
+        <div class="crud-actions">
+          <button>Criar</button>
+          <button>Listar</button>
+          <button>Editar</button>
+          <button>Remover</button>
+        </div>
+      </div>
+    </div>
+    <button id="logout-btn">Logout</button>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>

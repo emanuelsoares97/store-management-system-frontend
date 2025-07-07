@@ -1,0 +1,97 @@
+Roadmap Frontend MVP - Store Management System
+1. Setup Inicial e Autenticação (Semana 1)
+Configura ambiente frontend (React, Vue, ou até Vanilla JS)
+
+Implementa a tela de login (email + senha)
+
+Salva o token JWT no localStorage/sessionStorage
+
+Cria uma estrutura de roteamento protegido (rota privada)
+
+Controle básico de papéis (ex: admin, gerente, user) para renderizar menus e acesso
+
+Por quê?
+Garantir que só usuários autenticados possam acessar o sistema e com permissões adequadas.
+
+2. Interface e CRUD para Categorias (Semana 1-2)
+Página para listar todas as categorias (com chamada GET /category/list ou similar)
+
+Formulário para criar nova categoria (POST /category/new)
+
+Editar nome da categoria (PUT /category/<id>/update)
+
+Feedback visual: mostrar erros e sucessos
+
+Por quê?
+Categorias são básicas para organizar produtos, e é o primeiro passo para criar o inventário.
+
+3. Interface e CRUD para Produtos (Semana 2-3)
+Listar produtos (GET /product/list), com filtro básico por categoria
+
+Formulário para criar produto (nome, preço, quantidade em stock, categoria)
+
+Editar produto
+
+Visualizar detalhes básicos do produto
+
+Por quê?
+Produtos são o coração do sistema, precisa criar, listar e atualizar.
+
+4. Interface e CRUD para Clientes (Semana 3-4)
+Listar clientes
+
+Criar clientes (nome, email, telefone opcional)
+
+Editar clientes
+
+Visualizar cliente
+
+Por quê?
+Essencial para registrar vendas e manter histórico de clientes.
+
+5. Registrar e Listar Vendas (Semana 4)
+Formulário para registrar venda: selecionar cliente, produto, quantidade
+
+Listar vendas (mostrar dados básicos: cliente, produto, quantidade, data)
+
+Validar stock ao registrar venda (frontend pode só mostrar alerta, backend já valida)
+
+Por quê?
+Fechar o ciclo: vendas efetivas com clientes e produtos.
+
+6. Gerenciamento Básico de Usuários (Semana 4-5)
+Listar usuários ativos
+
+Criar usuários (nome, email, senha, papel)
+
+Editar usuários (atualizar dados e papel)
+
+Ativar/desativar usuários (PATCH)
+
+Por quê?
+Controlar acesso e papéis no sistema.
+
+7. Navegação e Feedback (Contínuo)
+Menu lateral ou topo para navegar entre categorias, produtos, clientes, vendas e usuários
+
+Feedback visual para sucesso, erro e loading (ex: toasts ou alerts)
+
+Confirmar ações importantes (ex: deletar ou desativar)
+
+8. Testes Básicos e Refino Final (Última semana do MVP)
+Testar funcionalidades com usuários reais ou você mesmo
+
+Corrigir bugs e ajustar fluxos básicos
+
+Melhorar usabilidade mínima (responsividade, clareza)
+
+Preparar deploy/teste final do MVP
+
+Dicas extras para acelerar
+Reutiliza componentes (ex: formulários, listas, botões)
+
+Usa bibliotecas para UI rápida: Bootstrap, Tailwind, Material UI
+
+Documenta rotas e endpoints usados para evitar erros
+
+Faz commits frequentes e pequenos, assim fica mais fácil ajustar
