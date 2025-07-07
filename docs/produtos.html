@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Produtos - Store Management</title>
+  <script type="module" crossorigin src="/store-management-system-frontend/assets/produtos-CYq1bCq2.js"></script>
+  <link rel="modulepreload" crossorigin href="/store-management-system-frontend/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/store-management-system-frontend/assets/logout-DMNDklZ6.js">
+  <link rel="stylesheet" crossorigin href="/store-management-system-frontend/assets/logout-DbKVC8I1.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+      <button onclick="window.location.href='index.html'" style="padding:0.5rem 1.2rem;background:#ffb347;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Voltar ao Dashboard</button>
+      <button id="logout-btn" style="padding:0.5rem 1.2rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Logout</button>
+    </div>
+    <h1>Produtos</h1>
+    <section id="produto-criar">
+      <h2>Criar Produto</h2>
+      <form id="form-produto">
+        <label>Nome: <input name="name" required /></label><br>
+        <label>Preço: <input name="price" type="number" step="0.01" required /></label><br>
+        <label>Quantidade em Estoque: <input name="stock_quantity" type="number" required /></label><br>
+        <div class="categoria-select-div"></div>
+        <button type="submit">Criar</button>
+      </form>
+      <div id="produto-criar-msg"></div>
+    </section>
+    <section id="produto-listar">
+      <h2>Lista de Produtos</h2>
+      <div id="produto-lista"></div>
+    </section>
+  </main>
+  <div id="footer"></div>
+</body>
+</html> 
