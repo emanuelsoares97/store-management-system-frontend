@@ -60,12 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!response.ok) throw new Error('Erro ao buscar vendas');
       const data = await response.json();
       const vendas = data.data.sales;
+      console.log(vendas);
       if (!Array.isArray(vendas) || vendas.length === 0) {
         listaDiv.innerHTML = '<p>Nenhuma venda encontrada.</p>';
         return;
       }
       let html = '<table style="width:100%;border-collapse:collapse;margin-top:1rem;">';
-      html += '<tr><th>ID</th><th>Utilizador</th><th>Produto</th><th>Quantidade</th><th>Cliente</th></tr>';
+      html += '<tr><th>ID</th><th>Utilizador</th><th>Produto</th><th>Quantidade</th><th>Cliente</th><th>Total (€)</th></tr>';
       vendas.forEach(venda => {
         const userNome = venda.user && venda.user.name ? venda.user.name : '-';
         const produtoNome = venda.product && venda.product.name ? venda.product.name : '-';
@@ -76,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <td>${produtoNome}</td>
           <td>${venda.quantity}</td>
           <td>${clienteNome}</td>
+          <td>${venda.total_value !== undefined ? venda.total_value : '-'}</td>
         </tr>`;
       });
       html += '</table>';
