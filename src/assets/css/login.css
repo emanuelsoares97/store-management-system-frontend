@@ -16,56 +16,73 @@ main {
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(255, 140, 0, 0.15);
   min-width: 320px;
-  max-width: 90vw;
+  max-width: 400px;
   margin: 2rem 0;
+  box-sizing: border-box;
 }
 
 h1 {
   color: #ff7f50;
   text-align: center;
   margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 label {
   color: #ff7f50;
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
 }
 
 input[type="email"],
 input[type="password"] {
   width: 100%;
-  padding: 0.7rem;
-  margin: 0.5rem 0 1rem 0;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
   border: 1px solid #ffb347;
-  border-radius: 8px;
+  border-radius: 12px;
   background: #fff;
   font-size: 1rem;
-  transition: border 0.2s;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 input[type="email"]:focus,
 input[type="password"]:focus {
-  border: 1.5px solid #ff7f50;
+  border-color: #ff7f50;
   outline: none;
+  box-shadow: 0 0 8px rgba(255, 127, 80, 0.4);
 }
 
 button[type="submit"] {
-  width: 100%;
-  padding: 0.8rem;
-  background: linear-gradient(90deg, #ff9800 0%, #ff7f50 100%);
+  padding: 0.75rem 1.8rem;
+  background: linear-gradient(135deg, #ff7f50, #ffb347);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(255, 140, 0, 0.10);
-  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 4px 8px rgba(255, 127, 80, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 button[type="submit"]:hover {
-  background: linear-gradient(90deg, #ff7f50 0%, #ff9800 100%);
-  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(135deg, #ff7f50cc, #ffb347cc);
+  box-shadow: 0 6px 15px rgba(255, 127, 80, 0.5);
+  transform: translateY(-3px);
+}
+
+button[type="submit"]:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(255, 127, 80, 0.4);
 }
 
 #login-message {
@@ -73,6 +90,7 @@ button[type="submit"]:hover {
   color: #d84315;
   text-align: center;
   min-height: 1.2em;
+  font-weight: 600;
 }
 
 #navbar, #footer {
@@ -81,4 +99,13 @@ button[type="submit"]:hover {
   background: rgba(255, 140, 0, 0.08);
   margin-bottom: 1rem;
   border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 450px) {
+  main {
+    padding: 1.5rem 1.8rem;
+    margin: 1.5rem;
+    max-width: 100vw;
+  }
 }

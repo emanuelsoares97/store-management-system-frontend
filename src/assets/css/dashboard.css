@@ -45,11 +45,11 @@ h1 {
   background: #fff3e0;
   padding: 1.5rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(255,140,0,0.08);
+  box-shadow: 0 2px 8px rgba(255, 140, 0, 0.08);
   min-width: 200px;
-  text-align: center;
-  flex: 1 1 220px;
   max-width: 260px;
+  flex: 1 1 220px;
+  text-align: center;
 }
 
 .dashboard-card h2 {
@@ -68,23 +68,61 @@ h1 {
   color: #ff9800;
 }
 
+.logout-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
 #logout-btn {
-  padding: 0.7rem 1.5rem;
-  background: #ff7f50;
+  padding: 0.75rem 1.8rem;
+  background: linear-gradient(135deg, #ff7f50, #ffb347);
   color: #fff;
   border: none;
-  border-radius: 8px;
-  font-weight: bold;
+  border-radius: 12px;
+  font-weight: 600;
   cursor: pointer;
-  margin: 0 auto;
-  display: block;
-  margin-top: 2rem;
-  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 4px 8px rgba(255, 127, 80, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
 }
 
 #logout-btn:hover {
-  background: #ff9800;
-  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(135deg, #ff7f50cc, #ffb347cc);
+  box-shadow: 0 6px 15px rgba(255, 127, 80, 0.5);
+  transform: translateY(-3px);
+}
+
+#logout-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(255, 127, 80, 0.4);
+}
+
+/* Botões dentro dos cards */
+.dashboard-card button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.8rem;
+  background: linear-gradient(135deg, #ff7f50, #ffb347);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 127, 80, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-card button:hover {
+  background: linear-gradient(135deg, #ff7f50cc, #ffb347cc);
+  box-shadow: 0 6px 15px rgba(255, 127, 80, 0.5);
+  transform: translateY(-3px);
+}
+
+.dashboard-card button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(255, 127, 80, 0.4);
 }
 
 #navbar, #footer {
@@ -129,4 +167,4 @@ h1 {
   main {
     padding: 1rem;
   }
-} 
+}
