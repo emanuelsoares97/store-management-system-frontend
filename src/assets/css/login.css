@@ -10,6 +10,24 @@ body {
   justify-content: center;
 }
 
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffb347 0%, #ff7f50 100%);
+}
+
+.login-box {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(255, 140, 0, 0.15);
+  min-width: 320px;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
 main {
   background: #fff3e0;
   padding: 2rem 2.5rem;
@@ -85,7 +103,7 @@ button[type="submit"]:active {
   box-shadow: 0 3px 8px rgba(255, 127, 80, 0.4);
 }
 
-#login-message {
+#login-msg {
   margin-top: 1rem;
   color: #d84315;
   text-align: center;
@@ -103,9 +121,16 @@ button[type="submit"]:active {
 
 /* Responsividade */
 @media (max-width: 450px) {
+  .login-box {
+    padding: 1.5rem 1.8rem;
+    margin: 1.5rem;
+    max-width: 100vw;
+  }
+  
   main {
     padding: 1.5rem 1.8rem;
     margin: 1.5rem;
     max-width: 100vw;
   }
 }
+
