@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
           'Authorization': `Bearer ${token}`
         }
       });
-      if (!response.ok) throw new Error('Erro ao buscar categorias');
+      if (!response.ok) throw new Error('Erro ao procurar categorias');
       const data = await response.json();
       const categorias = data.data.categories;
       console.log(data)
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       html += '</table>';
       listaDiv.innerHTML = html;
     } catch (err) {
-      listaDiv.innerHTML = `<p style="color:red;">Erro ao buscar categorias.</p>`;
+      listaDiv.innerHTML = `<p style="color:red;">Erro ao procurar categorias.</p>`;
     }
   }
 

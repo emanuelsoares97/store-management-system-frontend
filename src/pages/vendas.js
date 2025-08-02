@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await fetch('https://store-management-system-xemr.onrender.com/api/user/actives', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
-      if (!response.ok) throw new Error('Erro ao buscar utilizadores');
+      if (!response.ok) throw new Error('Erro ao procurar utilizadores');
       const data = await response.json();
       usersCache = data.data.users;
     } catch (err) {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await fetch('https://store-management-system-xemr.onrender.com/api/product/active', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
-      if (!response.ok) throw new Error('Erro ao buscar produtos');
+      if (!response.ok) throw new Error('Erro ao procurar produtos');
       const data = await response.json();
       produtosCache = data.data.products;
     } catch (err) {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await fetch('https://store-management-system-xemr.onrender.com/api/sale/list', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
-      if (!response.ok) throw new Error('Erro ao buscar vendas');
+      if (!response.ok) throw new Error('Erro ao procurar vendas');
       const data = await response.json();
       const vendas = data.data.sales;
       console.log(vendas);
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       html += '</table>';
       listaDiv.innerHTML = html;
     } catch (err) {
-      listaDiv.innerHTML = `<p style=\"color:red;\">Erro ao buscar vendas.</p>`;
+      listaDiv.innerHTML = `<p style=\"color:red;\">Erro ao procurar vendas.</p>`;
     }
   }
 
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       const data = await response.json();
       if (!response.ok) {
-        msgDiv.textContent = data.message || 'Erro ao registrar venda.';
+        msgDiv.textContent = data.message || 'Erro ao registar venda.';
         msgDiv.style.color = 'red';
         return;
       }
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
       await listarVendas();
     } catch (err) {
-      msgDiv.textContent = 'Erro ao registrar venda.';
+      msgDiv.textContent = 'Erro ao registar venda.';
       msgDiv.style.color = 'red';
     }
   });

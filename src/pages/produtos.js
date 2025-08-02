@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
           'Authorization': `Bearer ${token}`
         }
       });
-      if (!response.ok) throw new Error('Erro ao buscar categorias');
+      if (!response.ok) throw new Error('Erro ao procurar categorias');
       const data = await response.json();
       categoriasCache = data.data.categories;
       console.log('Categorias carregadas:', categoriasCache);
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
           'Authorization': `Bearer ${token}`
         }
       });
-      if (!response.ok) throw new Error('Erro ao buscar produtos');
+      if (!response.ok) throw new Error('Erro ao procurar produtos');
       const data = await response.json();
       const produtos = data.data.products;
       produtosCache = produtos;
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
       let html = '<table style="width:100%;border-collapse:collapse;margin-top:1rem;">';
-      html += '<tr><th>ID</th><th>Nome</th><th>Preço</th><th>Estoque</th><th>Categoria</th><th>Ações</th></tr>';
+      html += '<tr><th>ID</th><th>Nome</th><th>Preço</th><th>Stock</th><th>Categoria</th><th>Ações</th></tr>';
       produtos.forEach(prod => {
         const categoriaNome = prod.category && prod.category.name ? prod.category.name : '-';
         html += `<tr>
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
       listaDiv.innerHTML = html;
       addActionListeners();
     } catch (err) {
-      listaDiv.innerHTML = `<p style=\"color:red;\">Erro ao buscar produtos.</p>`;
+      listaDiv.innerHTML = `<p style=\"color:red;\">Erro ao procurar produtos.</p>`;
     }
   }
 

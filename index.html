@@ -2,36 +2,36 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <title>Gestão de Loja - Painel</title>
+  <title>Store Management - Dashboard</title>
   <link rel="stylesheet" href="src/assets/css/dashboard.css" />
 </head>
 <body>
   <div id="navbar"></div>
   <main id="app">
-    <div class="logout-container">
-      <button id="logout-btn">Terminar Sessão</button>
+    <div style="display:flex;justify-content:flex-end;margin-bottom:1rem;">
+      <button id="logout-btn" style="padding:0.5rem 1.2rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Logout</button>
     </div>
-    <h1>Painel</h1>
+    <h1>Dashboard</h1>
     <div class="dashboard-cards">
       <div class="dashboard-card">
         <h2>Produtos</h2>
         <p>Gerir o stock e adicionar novos produtos.</p>
-        <button onclick="window.location.href='produtos.html'">Ver Produtos</button>
+        <button onclick="window.location.href='produtos.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Aceder Produtos</button>
       </div>
       <div class="dashboard-card">
         <h2>Categorias</h2>
         <p>Gerir as categorias dos produtos.</p>
-        <button onclick="window.location.href='categoria.html'">Ver Categorias</button>
+        <button onclick="window.location.href='categoria.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Aceder Categorias</button>
       </div>
       <div class="dashboard-card">
         <h2>Vendas</h2>
-        <p>Registar e acompanhar as vendas efetuadas.</p>
-        <button onclick="window.location.href='vendas.html'">Ver Vendas</button>
+        <p>Registar e acompanhar as vendas realizadas.</p>
+        <button onclick="window.location.href='vendas.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Aceder Vendas</button>
       </div>
       <div class="dashboard-card">
         <h2>Utilizadores</h2>
         <p>Gerir os utilizadores do sistema.</p>
-        <button onclick="window.location.href='users.html'">Ver Utilizadores</button>
+        <button onclick="window.location.href='users.html'" style="margin-top:1rem;padding:0.7rem 1.5rem;background:#ff7f50;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer;">Aceder Utilizadores</button>
       </div>
     </div>
   </main>
@@ -39,4 +39,4 @@
   <script type="module" src="src/pages/main.js"></script>
   <script type="module" src="src/pages/logout.js"></script>
 </body>
-</html>
+</html> 

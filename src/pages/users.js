@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
           'Authorization': `Bearer ${token}`
         }
       });
-      if (!response.ok) throw new Error('Erro ao buscar utilizadors');
+      if (!response.ok) throw new Error('Erro ao procurar utilizadores');
       const data = await response.json();
       const users = data.data.users;
       usersCache = users;
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       listaDiv.innerHTML = html;
       addActionListeners();
     } catch (err) {
-      listaDiv.innerHTML = `<p style=\"color:red;\">Erro ao buscar utilizadors.</p>`;
+      listaDiv.innerHTML = `<p style=\"color:red;\">Erro ao procurar utilizadores.</p>`;
     }
   }
 
