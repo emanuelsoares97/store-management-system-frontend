@@ -1,14 +1,14 @@
 # Store Management System Frontend
 
-Este é o frontend de um sistema de gestão de loja, desenvolvido em JavaScript puro (Vanilla JS) e HTML/CSS, com integração a uma API backend para gerenciamento de vendas, produtos, categorias, utilizadores e clientes.
+Este é o frontend de um sistema de gestão de loja, desenvolvido em JavaScript puro (Vanilla JS) e HTML/CSS, com integração a uma API backend para gerir vendas, produtos, categorias, utilizadores e clientes.
 
 ## Funcionalidades
 - Login de utilizadores
-- Cadastro e listagem de produtos
-- Cadastro e listagem de categorias
-- Cadastro e listagem de utilizadores
+- Registro e listagem de produtos
+- Registro e listagem de categorias
+- Registro e listagem de utilizadores
 - Registro e listagem de vendas
-- Controle de estoque
+- Controle de stock
 
 ## Estrutura de Pastas
 ```
